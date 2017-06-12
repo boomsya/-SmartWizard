@@ -27,8 +27,8 @@ dependencies {
 }
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'smartwizard'
+    bintrayRepo = 'SmartWizard'
+    bintrayName = 'SmartWizard'
     orgName = 'boomsya'
 
     publishedGroupId = 'com.github.boomsya'
