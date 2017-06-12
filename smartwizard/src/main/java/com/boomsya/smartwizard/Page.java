@@ -14,7 +14,7 @@ public abstract class Page implements PageTreeNode {
      */
     public static final String SIMPLE_DATA_KEY = "_";
 
-    protected com.tech.freak.wizardpager2.ModelCallbacks mCallbacks;
+    protected ModelCallbacks mCallbacks;
 
     /**
      * Current wizard values/selections.
@@ -24,7 +24,7 @@ public abstract class Page implements PageTreeNode {
     protected boolean mRequired = false;
     protected String mParentKey;
 
-    protected Page(com.tech.freak.wizardpager2.ModelCallbacks callbacks, String title) {
+    protected Page(ModelCallbacks callbacks, String title) {
         mCallbacks = callbacks;
         mTitle = title;
     }
@@ -61,7 +61,7 @@ public abstract class Page implements PageTreeNode {
         return (mParentKey != null) ? mParentKey + ":" + mTitle : mTitle;
     }
 
-    public abstract void getDataItems(ArrayList<com.tech.freak.wizardpager2.DataItem> dest);
+    public abstract void getDataItems(ArrayList<DataItem> dest);
 
     public boolean isCompleted() {
         return true;
