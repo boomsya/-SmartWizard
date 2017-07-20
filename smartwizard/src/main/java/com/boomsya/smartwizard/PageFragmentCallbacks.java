@@ -5,5 +5,4 @@ import android.os.Bundle;
 public interface PageFragmentCallbacks {
     Page onGetPage(String key);
     Integer getPagescount();
-    void GetDataFromPrevStep(Bundle dest);
 }
