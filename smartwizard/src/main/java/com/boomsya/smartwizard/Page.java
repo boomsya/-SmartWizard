@@ -63,7 +63,7 @@ public abstract class Page implements PageTreeNode {
 
     public abstract void getDataItems(ArrayList<DataItem> dest);
 
-	public abstract void updateDataItems(final ArrayList<DataItem> dest);
+	public abstract void updateDataItems(Bundle dest);
 
     public boolean isCompleted() {
         return true;
