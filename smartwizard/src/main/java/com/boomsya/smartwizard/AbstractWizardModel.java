@@ -42,6 +42,10 @@ public abstract class AbstractWizardModel implements ModelCallbacks {
         return mRootPageList.findByKey(key);
     }
 
+    public Page findByClassName(Class classname) {
+        return mRootPageList.findByClassName(classname);
+    }
+
     public Integer PagesCount() {
         return mRootPageList.size();
     }

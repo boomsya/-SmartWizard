@@ -25,6 +25,16 @@ public class PageList extends ArrayList<Page> implements PageTreeNode {
         return null;
     }
 
+    public Page findByClassName(Class classname) {
+        for (Page childPage : this) {
+			if(childPage.getClass() == classname) {
+				return childPage;
+			}
+        }
+
+        return null;
+    }
+
     @Override
     public void flattenCurrentPageSequence(ArrayList<Page> dest) {
         for (Page childPage : this) {
