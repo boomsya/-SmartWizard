@@ -1,8 +1,6 @@
 package com.boomsya.smartwizard;
 
-import android.os.Bundle;
-
 public interface PageFragmentCallbacks {
-    Page onGetPage(String key);
+    Page onGetPage(Class classname);
     Integer getPagescount();
 }
